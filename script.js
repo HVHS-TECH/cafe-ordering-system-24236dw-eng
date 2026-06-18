@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>T11-data types</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- stylesheets *******************************************-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../assets/dtec_favicon.png">
+</head>
+
+<!--*************************************************************
+  BODY
+**************************************************************-->
+
 <body>
   <h1>T11-data types</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
