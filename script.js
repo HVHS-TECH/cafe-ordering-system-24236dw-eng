@@ -11,5 +11,5 @@ main code
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 let Username = NAME_FIELD.value;
-OUTPUT.innerHTML += "<p> Hi" + Username + "</p>";
+OUTPUT.innerHTML += "<p> Hi " + Username + "</p>";
 }
