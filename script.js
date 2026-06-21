@@ -8,7 +8,7 @@ OUTPUT.innerHTML += "<h2></h2>";
 main code
 
 ****************************/
-function getFormImput(){
+function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 let Username = NAME_FIELD.value;
 OUTPUT.innerHTML += "<p> Hi" + Username + "</p>";
