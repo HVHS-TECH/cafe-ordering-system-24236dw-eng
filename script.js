@@ -1,5 +1,3 @@
-
-
 console.log("Hello world");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 OUTPUT.innerHTML += "<h2></h2>";
@@ -13,5 +11,5 @@ main code
 function getFormImput(){
 const NAME_FIELD = document.getElementById("nameField");
 let Username = NAME_FIELD.value;
-
+OUTPUT.innerHTML += "<p> Hi" + Username + "</p>";
 }
