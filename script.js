@@ -21,3 +21,4 @@ OUTPUT.innerHTML += "<p>you have " + UserpocketMoney + " dollars.";
 OUTPUT.innerHTML += "<p>you spend half of your money, now you have " + halfMoney + " dollars";
 OUTPUT.innerHTML += "<p>then you get $3, you now have " + plusThree + " dollars" ;
 welcome()
+}
