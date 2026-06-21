@@ -1,3 +1,6 @@
+console.log("Hello world");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+OUTPUT.innerHTML += "<h2>added by javascrript</h2>";
 function start(){
 const NAME_FIELD = document.getElementById("nameField");
 let Username = NAME_FIELD.value;
