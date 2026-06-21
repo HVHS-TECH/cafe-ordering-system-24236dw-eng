@@ -1,17 +1,3 @@
-/****************************
-data types
-****************************/
-
-console.log("Running t11_data_types.js")
-const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-OUTPUT.innerHTML += "<h2>added by javascrript</h2>";
-
-//variables
-
-
-/****************************
-main code
-****************************/
 function start(){
 const NAME_FIELD = document.getElementById("nameField");
 let Username = NAME_FIELD.value;
@@ -35,18 +21,4 @@ OUTPUT.innerHTML += "<p>you have " + UserpocketMoney + " dollars.";
 OUTPUT.innerHTML += "<p>you spend half of your money, now you have " + halfMoney + " dollars";
 OUTPUT.innerHTML += "<p>then you get $3, you now have " + plusThree + " dollars" ;
 welcome()
-displayProduct("<p>chocolate: ", "$4.00");
-displayProduct("<p>chips: ", "$3.00");
-displayProduct("<p>drink: ", "$2.50");
-}
-
-/****************************
-functions
-****************************/
-function welcome(){
-    OUTPUT.innerHTML += "<p>welcome to the shop:";
-}
-
-function displayProduct(_name, _price){
-    OUTPUT.innerHTML += _name + _price
 }
