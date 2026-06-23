@@ -17,7 +17,7 @@ const ORDER_FIELD = document.getElementById("orderField");
 let Order = ORDER_FIELD.value;
 OUTPUT.innerHTML += "<p> Your order is " + Order + "</p>";
 
-const ORDER_FIELD = document.getElementById("orderField");
-let Order = ORDER_FIELD.value;
-OUTPUT.innerHTML += "<p> Your order is " + Order + "</p>";
+const MONEY_FIELD = document.getElementById("moneyField");
+let Money = MONEY_FIELD.value;
+OUTPUT.innerHTML += "<p> You have " + Order + "</p>";
 }
