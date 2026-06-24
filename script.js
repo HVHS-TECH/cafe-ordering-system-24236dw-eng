@@ -10,6 +10,12 @@ main code
 ****************************/
 const MONEY_FIELD = document.getElementById("moneyField");
 let UserpocketMoney = Number(MONEY_FIELD.value);
+let adaiasPrice = 4
+let nikePrice = 4
+let mitrePrice = 4
+let pumaPrice = 4
+let newbalancePrice = 4
+let selectPrice = 4
 
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
@@ -28,11 +34,10 @@ function calculateChange(_money, _price){
 let change = _money - _price
 return change;
 }
-    if (money >= 4){
-        OUTPUT.innerHTML += "<p>you have enough to buy a chocolate bar";
-        OUTPUT.innerHTML += "<p>you will get $"+calculateChange(money, chocolatePrice)+" change";
+    if (money >= 180){
+        OUTPUT.innerHTML += "<p>you have enough to buy the Adidas ball";
+        OUTPUT.innerHTML += "<p>you will get $"+calculateChange(money, adidasPrice)+" change";
     }
     else{
-        OUTPUT.innerHTML += "<p>you do not have enough to buy a chocolate bar"
+        OUTPUT.innerHTML += "<p>you do not have enough to buy the football"
     }
-}
