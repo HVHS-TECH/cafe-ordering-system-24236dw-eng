@@ -39,5 +39,5 @@ return change;
         OUTPUT.innerHTML += "<p>you will get $"+calculateChange(money, adidasPrice)+" change";
     }
     else{
-        OUTPUT.innerHTML += "<p>you do not have enough to buy the football"
+        OUTPUT.innerHTML += "<p>you do not have enough to buy the football";
     }
