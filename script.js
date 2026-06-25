@@ -1,43 +1,58 @@
 console.log("Hello world");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-OUTPUT.innerHTML += "<h2></h2>";
 
-//variables
+const prices = {
+  adidas: 4,
+  nike: 5,
+  mitre: 6,
+  puma: 7,
+  "new balance": 8,
+  select: 9
+};
 
-/****************************
-main code
-
-****************************/
-const MONEY_FIELD = document.getElementById("moneyField");
-let UserpocketMoney = Number(MONEY_FIELD.value);
-let adaiasPrice = 4
-let nikePrice = 5
-let mitrePrice = 6
-let pumaPrice = 7
-let newbalancePrice = 8
-let selectPrice = 9
-
-function getFormInput(){
-const NAME_FIELD = document.getElementById("nameField");
-let Username = NAME_FIELD.value;
-OUTPUT.innerHTML += "<p> Hi " + Username + "</p>";
-
-const ORDER_FIELD = document.getElementById("orderField");
-let Order = ORDER_FIELD.value;
-OUTPUT.innerHTML += "<p> Your order is " + Order + "</p>";
-
-const MONEY_FIELD = document.getElementById("moneyField");
-let Money = MONEY_FIELD.value;
-OUTPUT.innerHTML += "<p> You have $" + Money + "</p>";
+function calculateChange(_money, _price) {
+  return _money - _price;
 }
-function calculateChange(_money, _price){
-let change = _money - _price
-return change;
+
+function capitalize(text) {
+  return text.replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
-    if (money >= 4){
-        OUTPUT.innerHTML += "<p>you have enough to buy the Adidas ball";
-        OUTPUT.innerHTML += "<p>you will get $"+calculateChange(money, adidasPrice)+" change";
-    }
-    else{
-        OUTPUT.innerHTML += "<p>you do not have enough to buy the football";
-    }
+
+function getFormInput() {
+  OUTPUT.innerHTML = "";
+
+  const name = document.getElementById("nameField").value.trim();
+  const orderInput = document.getElementById("orderField").value.trim();
+  const order = orderInput.toLowerCase();
+  const money = Number(document.getElementById("moneyField").value);
+
+  OUTPUT.innerHTML += "<p>Hi " + (name || "Customer") + "</p>";
+  OUTPUT.innerHTML += "<p>Your order is " + (orderInput || "none") + "</p>";
+
+  if (!orderInput) {
+    OUTPUT.innerHTML += "<p>Please enter an item name from the list.</p>";
+    return;
+  }
+
+  if (isNaN(money)) {
+    OUTPUT.innerHTML += "<p>Please enter a valid money amount.</p>";
+    return;
+  }
+
+  const price = prices[order];
+  if (price === undefined) {
+    OUTPUT.innerHTML += "<p>We don't have that item. Choose Adidas, Nike, Mitre, Puma, New Balance, or Select.</p>";
+    return;
+  }
+
+  OUTPUT.innerHTML += "<p>You have $" + money + "</p>";
+
+  if (money < price) {
+    OUTPUT.innerHTML += "<p>You do not have enough money to buy the " + capitalize(order) + " ball.</p>";
+    OUTPUT.innerHTML += "<p>You need $" + (price - money) + " more.</p>";
+    return;
+  }
+
+  OUTPUT.innerHTML += "<p>You have enough to buy the " + capitalize(order) + " ball.</p>";
+  OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
+}

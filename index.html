@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BALLER'S BALL SHOP</title>
+  <title>BALLER'S BALL SHOP</title>
 </head>
 <body>
-<img src="Screenshot 2026-06-12 094929.png" alt="Image" style="width: 30%; height: 30%;">
-<ol>
-<li>Adidas</li>
-<li>Nike</li>
-<li>Mitre</li>
-<li>Puma</li>
-<li>New Balance</li>
-<li>Select</li>
+  <img src="Screenshot 2026-06-12 094929.png" alt="Image" style="width: 30%; height: 30%;">
+  <ol>
+    <li>Adidas</li>
+    <li>Nike</li>
+    <li>Mitre</li>
+    <li>Puma</li>
+    <li>New Balance</li>
+    <li>Select</li>
+  </ol>
 
+  <form onsubmit="return false;">
+    <label for="nameField">Name:</label>
+    <input type="text" id="nameField" name="formName" placeholder="Name">
 
-<body>
-<form onsubmit="return false;">
+    <label for="orderField">Order:</label>
+    <input type="text" id="orderField" name="formOrder" placeholder="Order">
 
-<label for=":formName">Name:</label>
-<input type="text" id="nameField" name="formName" placeholder="Name">
+    <label for="moneyField">Money:</label>
+    <input type="number" id="moneyField" name="formMoney" placeholder="Money">
 
-<label for=":formName">Order:</label>
-<input type="text" id="orderField" name="formOrder" placeholder="Order">
+    <input type="submit" onclick="getFormInput()">
+  </form>
 
-<label for=":formName"> Money:</label>
-<input type="number" id="moneyField" name="formMoney" placeholder="Money">
+  <div id="spaceForJavaScriptOutput"></div>
 
-<input type="submit" onClick=getFormInput()>
-</form>
-
-<div id="spaceForJavaScriptOutput">      
-
-</div>        
-</html>
-
-<script src="script.js"></script>                       
+  <script src="script.js"></script>
 </body>
 </html>
