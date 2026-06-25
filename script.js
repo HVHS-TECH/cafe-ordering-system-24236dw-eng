@@ -34,7 +34,7 @@ function calculateChange(_money, _price){
 let change = _money - _price
 return change;
 }
-    if (money >= 180){
+    if (money >= 4){
         OUTPUT.innerHTML += "<p>you have enough to buy the Adidas ball";
         OUTPUT.innerHTML += "<p>you will get $"+calculateChange(money, adidasPrice)+" change";
     }
