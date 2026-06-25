@@ -11,11 +11,11 @@ main code
 const MONEY_FIELD = document.getElementById("moneyField");
 let UserpocketMoney = Number(MONEY_FIELD.value);
 let adaiasPrice = 4
-let nikePrice = 4
-let mitrePrice = 4
-let pumaPrice = 4
-let newbalancePrice = 4
-let selectPrice = 4
+let nikePrice = 5
+let mitrePrice = 6
+let pumaPrice = 7
+let newbalancePrice = 8
+let selectPrice = 9
 
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
