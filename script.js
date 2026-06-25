@@ -28,7 +28,7 @@ OUTPUT.innerHTML += "<p> Your order is " + Order + "</p>";
 
 const MONEY_FIELD = document.getElementById("moneyField");
 let Money = MONEY_FIELD.value;
-OUTPUT.innerHTML += "<p> You have " + Money + "</p>";
+OUTPUT.innerHTML += "<p> You have $" + Money + "</p>";
 }
 function calculateChange(_money, _price){
 let change = _money - _price
