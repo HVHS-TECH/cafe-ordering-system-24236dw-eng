@@ -17,8 +17,8 @@ function calculateChange(_money, _price) {
 function getFormInput() {
   OUTPUT.innerHTML = "";
 
-  const name = document.getElementById("nameField").value.;
-  const orderInput = document.getElementById("orderField");
+  const name = document.getElementById("nameField").value;
+  const orderInput = document.getElementById("orderField").value;
   const order = orderInput.toLowerCase();
   const money = Number(document.getElementById("moneyField").value);
 
