@@ -2,12 +2,12 @@ console.log("Hello world");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
 const prices = {
-  adidas: 4,
-  nike: 5,
-  mitre: 6,
-  puma: 7,
-  "new balance": 8,
-  select: 9
+  adidas: 190,
+  nike: 200,
+  mitre: 160,
+  puma: 180,
+  "new balance": 150,
+  select: 170
 };
 
 function calculateChange(_money, _price) {
