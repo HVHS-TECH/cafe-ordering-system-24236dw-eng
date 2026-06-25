@@ -14,10 +14,6 @@ function calculateChange(_money, _price) {
   return _money - _price;
 }
 
-function capitalize(text) {
-  return text.replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
-
 function getFormInput() {
   OUTPUT.innerHTML = "";
 
@@ -48,11 +44,11 @@ function getFormInput() {
   OUTPUT.innerHTML += "<p>You have $" + money + "</p>";
 
   if (money < price) {
-    OUTPUT.innerHTML += "<p>You do not have enough money to buy the " + capitalize(order) + " ball.</p>";
+    OUTPUT.innerHTML += "<p>You do not have enough money to buy the " +(order) + " ball.</p>";
     OUTPUT.innerHTML += "<p>You need $" + (price - money) + " more.</p>";
     return;
   }
 
-  OUTPUT.innerHTML += "<p>You have enough to buy the " + capitalize(order) + " ball.</p>";
+  OUTPUT.innerHTML += "<p>You have enough to buy the " + (order) + " ball.</p>";
   OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
 }
