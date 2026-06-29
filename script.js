@@ -54,5 +54,6 @@ function getFormInput() {
   OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
 } 
 if (quantity > 1){
-  OUTPUT.innerHTML += "<p>You have ordered 3 " + (order) + "balls.<p>";
+   OUTPUT.innerHTML += "<p>You have ordered 3 " + (order) + "balls.</p>";
+   OUTPUT.innerHTML += "<p>
 }
