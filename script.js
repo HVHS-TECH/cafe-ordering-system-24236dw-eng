@@ -21,7 +21,7 @@ function getFormInput() {
   const orderInput = document.getElementById("orderField").value;
   const order = orderInput.toLowerCase();
   const money = Number(document.getElementById("moneyField").value);
-  const money = Number(document.getElementById("moneyField").value);
+  const quantity = Number(document.getElementById("quantityField").value);
 
   OUTPUT.innerHTML += "<p>Hi " + (name || "Customer") + "</p>";
   OUTPUT.innerHTML += "<p>Your order is " + (orderInput || "none") + "</p>";
