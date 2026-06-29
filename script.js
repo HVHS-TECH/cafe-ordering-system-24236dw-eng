@@ -53,13 +53,4 @@ function getFormInput() {
   OUTPUT.innerHTML += "<p>You have enough to buy the " + (order) + " ball.</p>";
   OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
 } 
-if (quantity > 1) {
-  OUTPUT.innerHTML += "<p>You have ordered " + quantity + " " + (order) + " balls.</p>";
-  OUTPUT.innerHTML += "<p>Total cost is $" + (price * quantity) + "</p>";
-  if (money < price * quantity) {
-    OUTPUT.innerHTML += "<p>You do not have enough money to buy " + quantity + " " + (order) + " balls.</p>";
-    OUTPUT.innerHTML += "<p>You need $" + ((price * quantity) - money) + " more.</p>";
-    return;
-  }
-  OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price * quantity) + "</p>";
-}
+if (quantity )
