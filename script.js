@@ -6,7 +6,7 @@ const prices = {
   nike: 200,
   mitre: 160,
   puma: 180,
-  "new balayaush ance": 150,
+  "new balance": 150,
   select: 170
 };
 
@@ -54,5 +54,5 @@ function getFormInput() {
   OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
 } 
 if (quantity < 1) {
-   OUTPUT.innerHTML += "<p>You have ordered 3 " + (order) + "balls.</p>";
+   OUTPUT.innerHTML += "<p>You have ordered " + (order) + "balls.</p>";
 }
