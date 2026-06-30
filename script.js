@@ -53,6 +53,6 @@ function getFormInput() {
   OUTPUT.innerHTML += "<p>You have enough to buy the " + (order) + " ball.</p>";
   OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
 } 
-if (quantity < 1) {
-   OUTPUT.innerHTML += "<p>You have ordered " + (order) + "balls.</p>";
-}
+if (quantity < 1){}
+
+{OUTPUT.innerHTML += "<p>You have ordered " + (order) + "balls.</p>";}
