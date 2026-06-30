@@ -6,7 +6,7 @@ const prices = {
   nike: 200,
   mitre: 160,
   puma: 180,
-  "new balance": 150,
+  "new balayaush ance": 150,
   select: 170
 };
 
