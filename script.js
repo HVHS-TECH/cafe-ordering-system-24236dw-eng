@@ -1,58 +1,55 @@
-console.log("Hello world");
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
-const prices = {
-  adidas: 190,
-  nike: 200,
-  mitre: 160,
-  puma: 180,
-  "new balance": 150,
-  select: 170
-};
-
-function calculateChange(_money, _price) {
-  return _money - _price;
-}
-
 function getFormInput() {
- 
 
-  const name = document.getElementById("nameField").value;
-  const orderInput = document.getElementById("orderField").value;
-  const order = orderInput.toLowerCase();
-  const money = Number(document.getElementById("moneyField").value);
-  const quantity = Number(document.getElementById("quantityField").value);
+    OUTPUT.innerHTML = "";
 
-  OUTPUT.innerHTML += "<p>Hi " + (name || "Customer") + "</p>";
-  OUTPUT.innerHTML += "<p>Your order is " + (orderInput || "none") + "</p>";
+    let name = document.getElementById("nameField").value;
+    let order = document.getElementById("orderField").value;
+    let money = Number(document.getElementById("moneyField").value);
+    let quantity = Number(document.getElementById("quantityField").value);
 
-  if (!orderInput) {
-    OUTPUT.innerHTML += "<p>Please enter an item name from the list.</p>";
-    return;
-  }
+    let price = 0;
 
-  if (isNaN(money)) {
-    OUTPUT.innerHTML += "<p>Please enter a valid money amount.</p>";
-    return;
-  }
+    if (order == "Adidas") {
+        price = 190;
+    }
+    else if (order == "Nike") {
+        price = 200;
+    }
+    else if (order == "Mitre") {
+        price = 160;
+    }
+    else if (order == "Puma") {
+        price = 180;
+    }
+    else if (order == "New Balance") {
+        price = 150;
+    }
+    else if (order == "Select") {
+        price = 170;
+    }
+    else {
+        OUTPUT.innerHTML += "<p>Sorry, we don't sell that ball.</p>";
+        return;
+    }
 
-  const price = prices[order];
-  if (price === undefined) {
-    OUTPUT.innerHTML += "<p>We don't have that item. Choose Adidas, Nike, Mitre, Puma, New Balance, or Select.</p>";
-    return;
-  }
+    OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
+    OUTPUT.innerHTML += "<p>You ordered a " + order + " ball.</p>";
+    OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";
 
-  OUTPUT.innerHTML += "<p>You have $" + money + "</p>";
+    let total = price * quantity;
 
-  if (money < price) {
-    OUTPUT.innerHTML += "<p>You do not have enough money to buy the " +(order) + " ball.</p>";
-    OUTPUT.innerHTML += "<p>You need $" + (price - money) + " more.</p>";
-    return;
-  }
+    OUTPUT.innerHTML += "<p>Total price: $" + total + "</p>";
 
-  OUTPUT.innerHTML += "<p>You have enough to buy the " + (order) + " ball.</p>";
-  OUTPUT.innerHTML += "<p>Your change will be $" + calculateChange(money, price) + "</p>";
-} 
-if (quantity < 1){}
-
-{OUTPUT.innerHTML += "<p>You have ordered " + (order) + "balls.</p>";}
+    if (money >= total) {
+        let change = money - total;
+        OUTPUT.innerHTML += "<p>You have enough money.</p>";
+        OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>";
+    }
+    else {
+        let need = total - money;
+        OUTPUT.innerHTML += "<p>You do not have enough money.</p>";
+        OUTPUT.innerHTML += "<p>You need $" + need + " more.</p>";
+    }
+}
