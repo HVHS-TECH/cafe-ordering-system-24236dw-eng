@@ -1,5 +1,5 @@
-head, body { 
-   background-color: rgb(154, 0, 185);
+body { 
+background-color: rgb(154, 0, 185);
 min-height: 100vh;
 margin: 0;
 }
