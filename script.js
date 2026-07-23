@@ -40,12 +40,6 @@ function getFormInput() {
     OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";
 
     let total = price * quantity;
-
-    if(quantity > 0) {
-    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1. </p>";
-     return;
-    }
-
     OUTPUT.innerHTML += "<p>Total price: $" + total + "</p>";
 
     if (money >= total) {
@@ -59,3 +53,6 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>You need $" + need + " more.</p>";
     }
 }
+    if(quantity > 0) {
+    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1n </p>";
+    }
