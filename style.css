@@ -27,3 +27,9 @@ gap: 10px;
 border-radius:50px;
 box-shadow:3px 2px 100px black;
 }
+h2 {
+    position: fixed;
+    top: -10px;
+    left: -;
+    z-index: 999;
+}
