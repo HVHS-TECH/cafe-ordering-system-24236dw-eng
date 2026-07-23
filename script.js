@@ -34,15 +34,10 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>Sorry, we don't sell that ball.</p>";
         return;
     }
-
     OUTPUT.innerHTML += "<p>Your receipt is: </p>";
     OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
     OUTPUT.innerHTML += "<p>You ordered a " + order + " ball.</p>";
-    OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";}
-    if(quantity>0) {
-    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1.</p>";
-    }
-
+    OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";
 
     let total = price * quantity;
     OUTPUT.innerHTML += "<p>Total price: $" + total + "</p>";
@@ -57,3 +52,4 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>You do not have enough money.</p>";
         OUTPUT.innerHTML += "<p>You need $" + need + " more.</p>";
     }
+}
