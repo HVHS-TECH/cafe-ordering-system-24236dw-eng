@@ -21,6 +21,7 @@ object-fit: contain;
 }
 .footballs-price {
 display: flex; 
+width: 200px;
 gap: 10px; 
 border-radius:50px;
 box-shadow:0px 0px 100px black;
