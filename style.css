@@ -14,3 +14,8 @@ border-radius:20px;
 box-shadowing:20px;
 color: blue; 
 }
+.footballs-container img {
+width: 150px;
+height: 150px;
+object-fit: contain;
+}
