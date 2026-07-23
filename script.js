@@ -31,6 +31,7 @@ function getFormInput() {
     }
     else {
         OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
+        OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
         OUTPUT.innerHTML += "<p>Sorry, we don't sell that ball.</p>";
         return;
     }
