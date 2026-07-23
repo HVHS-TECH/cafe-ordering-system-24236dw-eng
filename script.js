@@ -39,8 +39,7 @@ function getFormInput() {
     OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
     OUTPUT.innerHTML += "<p>You ordered a " + order + " ball.</p>";
     OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";}
-    else {
-    
+    if(quantity>0) {
     OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1.</p>";
     }
 
