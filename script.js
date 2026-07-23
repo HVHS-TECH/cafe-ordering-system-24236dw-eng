@@ -52,7 +52,3 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>You do not have enough money.</p>";
         OUTPUT.innerHTML += "<p>You need $" + need + " more.</p>";
     }
-}
-    if(price > total) {
-    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1n </p>";
-    }
