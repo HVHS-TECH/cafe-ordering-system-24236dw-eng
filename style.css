@@ -35,6 +35,6 @@ h2 {
 .moving-text  {
     position: fixed;
     top: -10px;
-    left:
+    left:200px;
     z-index: 999;
 }
