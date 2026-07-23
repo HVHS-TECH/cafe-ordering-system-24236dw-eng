@@ -34,7 +34,13 @@ h2 {
 }
 .moving-text  {
     position: fixed;
-    top: -10px;
-    left:200px;
+    top: 10px;
+    left:130px;
+    z-index: 999;
+}
+.mmoving-text  {
+    position: fixed;
+    top: 10px;
+    left:230px;
     z-index: 999;
 }
