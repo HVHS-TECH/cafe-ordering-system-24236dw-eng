@@ -34,10 +34,16 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>Sorry, we don't sell that ball.</p>";
         return;
     }
+
     OUTPUT.innerHTML += "<p>Your receipt is: </p>";
     OUTPUT.innerHTML += "<p>Hello " + name + "</p>";
     OUTPUT.innerHTML += "<p>You ordered a " + order + " ball.</p>";
-    OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";
+    OUTPUT.innerHTML += "<p>Quantity: " + quantity + "</p>";}
+    else {
+    
+    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1.</p>";
+    }
+
 
     let total = price * quantity;
     OUTPUT.innerHTML += "<p>Total price: $" + total + "</p>";
