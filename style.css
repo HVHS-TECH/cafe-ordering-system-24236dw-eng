@@ -1,0 +1,15 @@
+h1{
+text-align: center;
+width : 100%;
+}
+
+head, body{ 
+background-color: #f8f8fa;
+}
+
+.footballs-container{
+display: flex; 
+gap: 30px; 
+border-radius:20px;
+box-shadowing:20px;
+}
