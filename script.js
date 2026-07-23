@@ -53,6 +53,6 @@ function getFormInput() {
         OUTPUT.innerHTML += "<p>You need $" + need + " more.</p>";
     }
 }
-    if(quantity > 0) {
+    if(price > total) {
     OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1n </p>";
     }
