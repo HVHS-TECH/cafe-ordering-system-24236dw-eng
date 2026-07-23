@@ -42,7 +42,7 @@ function getFormInput() {
     let total = price * quantity;
 
     if(quantity > 0) {
-    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1n </p>";
+    OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1. </p>";
     }
 
 
