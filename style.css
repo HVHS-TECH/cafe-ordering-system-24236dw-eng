@@ -10,49 +10,6 @@ background-color: #f8f8fa;
 .footballs-container{
 display: flex; 
 gap: 10px; 
-width:200px;
-border-radius:50px;
-box-shadow:0px 0px 100px black;
-}
-.footballs-containerr{
-display: flex; 
-gap: 10px; 
-width:200px;
-border-radius:50px;
-box-shadow:0px 0px 100px black;
-}
-.footballs-containerrr{
-display: flex; 
-gap: 10px; 
-width:200px;
-border-radius:50px;
-box-shadow:0px 0px 100px black;
-}
-.footballs-containerrrr{
-display: flex; 
-gap: 10px; 
-width:200px;
-border-radius:50px;
-box-shadow:0px 0px 100px black;
-}
-.footballs-containerrrrr{
-display: flex; 
-gap: 10px; 
-width:200px;
-border-radius:50px;
-box-shadow:0px 0px 100px black;
-}
-.footballs-containerrrrr{
-display: flex; 
-gap: 10px; 
-width:200px;
-border-radius:50px;
-box-shadow:0px 0px 100px black;
-}
-.footballs-containerrrrrr{
-display: flex; 
-gap: 10px; 
-width:200px;
 border-radius:50px;
 box-shadow:0px 0px 100px black;
 }
