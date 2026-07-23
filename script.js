@@ -43,8 +43,8 @@ function getFormInput() {
 
     if(quantity > 0) {
     OUTPUT.innerHTML += "<p>Sorry you need a quantity more than 1. </p>";
+     return;
     }
-
 
     OUTPUT.innerHTML += "<p>Total price: $" + total + "</p>";
 
