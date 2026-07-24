@@ -1,5 +1,9 @@
 const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
 
+
+const ballNames = ["Adidas", "Nike", "Mitre", "Puma", "New Balance", "Select"]; 
+const ballPrices = [190, 200, 160, 180, 150, 170];
+
 function getFormInput() {
 
     OUTPUT.innerHTML = "";
